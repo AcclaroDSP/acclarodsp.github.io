@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Audio Plugin Showcase</title> 
+ <style> 
+ /* Basic Reset */ 
+ * { 
+ margin: 0; 
+ padding: 0; 
+ box-sizing: border-box; 
+ } 
+
+ body, html { 
+ height: 100%; 
+ font-family: sans-serif; 
+ } 
+
+ .background-container { 
+ position: relative; 
+ width: 100%; 
+ height: 100%; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ overflow: hidden; 
+ } 
+
+ .background-blur { 
+ position: absolute; 
+ top: -20px; 
+ left: -20px; 
+ right: -20px; 
+ bottom: -20px; 
+ background-image: url('demoImage.png'); 
+ background-size: cover; 
+ background-position: center; 
+ filter: blur(20px); 
+ z-index: -1; 
+ } 
+
+ .content-container { 
+ padding: 20px; 
+ max-width: 90%; 
+ } 
+
+ .main-image { 
+ display: block; 
+ max-width: 100%; 
+ height: auto; 
+ border-radius: 10px; 
+ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+ } 
+ </style> 
+</head> 
+<body> 
+
+ <div class="background-container"> 
+ <div class="background-blur"></div> 
+ <div class="content-container"> 
+ <img src="demoImage.png" alt="Audio Plugin Interface" class="main-image"> 
+ </div> 
+ </div> 
+
+</body> 
+</html> 
